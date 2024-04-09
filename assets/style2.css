@@ -1,73 +1,131 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Helvetica", Arial, sans-serif;
     margin: 0;
 }
 
-.header {
-    padding: 60px;
+header {
+    padding: 30px;
     text-align: center;
-    background: darkolivegreen;
-    color: whitesmoke;
+    background: #386641;
+    color: #f2e8cf;
 }
 
 .navbar {
     display: flex;
-    background: darkgoldenrod;
+    background: #bc4749;
 }
 
 .navbar a {
-    color: whitesmoke;
+    color: black;
     padding: 1% 2%;
     text-decoration: none;
     text-align: center;
+    transition: box-shadow 0.5s ease;
+    border-radius: 15%;
 }
+/* how can i change the size of the background hover? */
 
 .navbar a:hover {
-    background-color: darkolivegreen;
-    color: whitesmoke;
+    background-color: #386641;
+    background-size: 50%;
+    color: #f2e8cf;
+    box-shadow: 0 0 10px 5px #f2e8cf;
+}
+
+.under-nav {
+  background: #386641;
+  padding: .5%;
 }
 
 .row {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-    flex: 30%;
-    background-color: #f1f1f1;
+    flex: 10%;
+    flex-direction: column;
+    background-color: #f2e8cf;
     padding: 20px;
-  }
+}
   
   /* Main column */
-  .main {
-    flex: 70%;
-    background-color: white;
+.main {
+    flex: 80%;
+    background-color: #f2e8cf;
+    padding: 10px;
+    border: #bc4749;
+    border-style: dotted;
+}
+
+.main a:hover {
+  background-color: #386641;
+  background-size: 50%;
+  color: #f2e8cf;
+  box-shadow: 0 0 10px 5px #f2e8cf;
+}
+
+
+
+  /* going to try and make a grid layout */
+/* .main {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+} */
+
+.img {
+    background-color: #6a994e;
+    width: auto;
     padding: 20px;
   }
-  
-  /* Fake image, just for this example */
-  .fakeimg {
-    background-color: darkgoldenrod;
+
+.imgr {
+    background-color:#bc4749;
+    width: auto;
+    padding: 20px;
+}
+
+.imgp {
+    background-color:#386641;
+    width: auto;
+    padding: 20px;
+}
+
+.fog {
+  width: 50%;
+  height: auto;
+  border: solid;
+  border-width: 10px;  
+  border-radius: 2%;
+  border-color:#386641;
+}  
+
+@media (max-width: 768px) {
+  .fog {
     width: 100%;
-    padding: 20px;
   }
-  
-  /* Footer */
+}
+
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #a7c957;
+    color: black;
+    
   }
   
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
-    .row, .navbar {   
+    .row, .navbar, .footer {   
       flex-direction: column;
-    }
+          }
   }
+
