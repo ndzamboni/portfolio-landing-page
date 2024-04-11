@@ -28,7 +28,6 @@ header {
   transition: box-shadow 0.5s ease;
   border-radius: 15%;
 }
-/* how can i change the size of the background hover? */
 
 .navbar a:hover {
   background-color: #FF6D00;
@@ -46,13 +45,13 @@ header {
 
 .main img:hover {
   color: whitesmoke;
-  transition: box-shadow 1s ease;
+  transition: box-shadow .5s ease;
   box-shadow: 0 0 10px 5px #FF9E00;
 }
 
 .under-nav {
-background: #FF9E00;
-padding: .5%;
+  background: #FF9E00;
+  padding: .5%;
 }
 
 .row {
@@ -68,7 +67,6 @@ padding: .5%;
   border-style:groove;
 }
 
-/* Main column */
 .main {
   flex: 1;
   background-color: #e5e5e5;
@@ -83,9 +81,9 @@ padding: .5%;
 }
 
 .main > a > img {
-width: 90%;
-max-width: 90%;
-height: auto;
+  width: 90%;
+  max-width: 90%;
+  height: auto;
 }
 
 .main > a {
@@ -95,24 +93,12 @@ height: auto;
 }
 
 .content {
-display: grid;
-grid-template-columns: repeat(3 ,1fr);
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
 }
 
-.img {
+.imgg {
   background-color: #FF9E00;
-  width: auto;
-  padding: 20px;
-}
-
-.imgr {
-  background-color:#FF9E00;
-  width: auto;
-  padding: 20px;
-}
-
-.imgp {
-  background-color:#FF9E00;
   width: auto;
   padding: 20px;
 }
@@ -131,20 +117,39 @@ grid-template-columns: repeat(3 ,1fr);
   box-shadow: 0 0 10px 5px #240046;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .fog {
-width: 50%;
-height: auto;
-border: solid;
-border-width: 10px;  
-border-radius: 2%;
-border-color:#240046;
+  width: 50%;
+  height: auto;
+  border: solid;
+  border-width: 10px;  
+  border-radius: 2%;
+  border-color:#240046;
 }  
+
+.imgg a {
+  color: black;
+}
+
+.imgg a:visited {
+  color: black;
+}
+
+.imgg a:hover {
+  color: #5A189A;
+}
+
+.imgg a:active {
+  color: #5A189A;
+}
 
 @media (max-width: 768px) {
 .fog {
   width: 100%;
-}
-
+  }
 }
 
 .footer {
@@ -158,7 +163,7 @@ border-color:#240046;
 @media screen and (max-width: 700px) {
   .row, .navbar, .footer, .content, .main {   
     flex-direction: column;
-        }
+  }
 }
 
 @media (max-width: 768px) {
