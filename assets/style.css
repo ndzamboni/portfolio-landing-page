@@ -26,7 +26,7 @@ header {
   text-decoration: none;
   text-align: center;
   transition: box-shadow 0.5s ease;
-  border-radius: 15%;
+  border-radius: 30% 10%;
 }
 
 .navbar a:hover {
@@ -101,6 +101,7 @@ header {
   background-color: #FF9E00;
   width: auto;
   padding: 20px;
+  border-radius: 25% 10%;
 }
 
 .profile {
@@ -108,7 +109,7 @@ header {
   height: auto;
   border: solid;
   border-width: 10px;  
-  border-radius: 2%;
+  border-radius: 12%;
   border-color:#240046;
 }
 
@@ -126,7 +127,7 @@ ul {
   height: auto;
   border: solid;
   border-width: 10px;  
-  border-radius: 2%;
+  border-radius: 12%;
   border-color:#240046;
 }  
 
