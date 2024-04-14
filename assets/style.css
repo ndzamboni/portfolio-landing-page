@@ -78,6 +78,7 @@ header {
   border: #e5e5e5;
   border-style:groove;
   text-align: center;
+  border-radius: 10%;
 }
 
 .main > a > img {
@@ -184,4 +185,11 @@ ul {
     width: 100%;
   }
 } 
-  
+
+.content {
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.main {
+  transition: transform 0.5s ease-out; /* Transition for smooth movement */
+}
