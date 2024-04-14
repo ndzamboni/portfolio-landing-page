@@ -9,8 +9,8 @@
          const y = e.clientY - rect.top;  // Y position within the element
 
          // Calculate tilt angles based on mouse position
-         const tiltX = (rect.width / 2 - x) / 20; // Adjust the divisor to control the tilt intensity
-         const tiltY = (rect.height / 2 - y) / 20;
+         const tiltX = (rect.width / 2 - x) / 40; // Adjust the divisor to control the tilt intensity
+         const tiltY = (rect.height / 2 - y) / 40;
 
          // Apply tilt effect using CSS transform
          element.style.transform = `perspective(1000px) rotateY(${tiltX}deg) rotateX(${-tiltY}deg)`;
