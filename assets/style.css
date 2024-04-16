@@ -194,9 +194,7 @@ ul {
   transition: transform 0.5s ease-out; /* Transition for smooth movement */
 }
 
-.light-mode {
-  background-color: #ffffff;
-  color: #000000;
+* {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -245,6 +243,12 @@ ul {
 .dark-mode .footer{
   background-color: #11001C;
   color: #ffffff;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.light-mode{
+  background-color: #ffffff;
+  color: #000000;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
