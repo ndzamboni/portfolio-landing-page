@@ -22,3 +22,11 @@ tiltElements.forEach(element => {
     });
 });
 
+function toggleMode() {
+    // Get the body element
+    const body = document.body;
+
+    // Toggle between light-mode and dark-mode classes
+    body.classList.toggle('light-mode');
+    body.classList.toggle('dark-mode');
+}

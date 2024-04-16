@@ -78,7 +78,7 @@ header {
   border: #e5e5e5;
   border-style:groove;
   text-align: center;
-  border-radius: 10%;
+  /* border-radius: 10%; */
 }
 
 .main > a > img {
@@ -194,3 +194,74 @@ ul {
   transition: transform 0.5s ease-out; /* Transition for smooth movement */
 }
 
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode .main{
+  background-color: #11001C;
+  color: #ffffff;
+  border-color: #11001C;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: transform 0.5s ease-out;
+}
+
+.dark-mode .side{
+  background-color: #11001C;
+  color: #ffffff;
+  border-color: #11001C;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode .content{
+  background-color: #131316;
+  color: #ffffff;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode img{
+  border-color: #FF6D00;
+  transition: border-color 0.5s ease, color 0.5s ease
+}
+
+.dark-mode .navbar{
+  background-color: #290025;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode header{
+  background-color: #11001C;
+  color: #ffffff;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode .under-nav{
+  background-color: #FF6D00;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode .footer{
+  background-color: #11001C;
+  color: #ffffff;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#mode-toggle {
+  position: fixed;
+  top: 20px; 
+  right: 20px; 
+  padding: 10px 20px;
+  background-color: #FF6D00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+#mode-toggle:hover {
+  background-color: #5A189A;
+  color: white;
+}
