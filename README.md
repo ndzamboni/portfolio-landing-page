@@ -4,7 +4,7 @@ Live Site: https://ndzamboni.github.io/portfolio-landing-page/
 
 The purpose of this is to create a professional landing page that displays the entire spectrum of full-stack web development projects.
 
-![Alt text](assets\screenshot-zambo-portfolio.PNG)
+![Alt text](./assets/screenshot-zambo-portfolio.PNG)
 
 ## Landing Page
 
