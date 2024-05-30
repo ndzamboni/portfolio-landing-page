@@ -8,7 +8,7 @@ The purpose of this is to create a professional landing page that displays the e
 
 ## Landing Page
 
-* The landing page should show a breif overview of Nick's bio.
+* The landing page should show a brief overview of Nick's bio.
 * The landing page will have clickable tiles or buttons that pull up works completed.
 * The landing page will have links to relavent social media, github, email, and linkedin.
 * The landing page will have hover effects to improved readability. 
